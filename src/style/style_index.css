@@ -1,0 +1,430 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+/* Estilos del contenedor */
+.ofertas-container,
+.festival-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.festival-container {
+  background-color: #ffc107d0;
+}
+/* Estilos de la sección */
+.ofertas-section,
+.festival-section {
+  max-width: 100%;
+  width: 90%;
+  text-align: center;
+  margin: 5px 0px;
+}
+
+/* Estilos del título */
+.ofertas-title,
+.festival-title {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #05037c;
+  margin: 0;
+}
+img.d-block.w-100 {
+  height: 450px;
+}
+.nav-link {
+  color: #05037c;
+  font-family: "Poppins", sans-serif;
+}
+.promociones {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.promo_link {
+  color: #05037c;
+  text-decoration: none !important;
+  padding: 10px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.promo_link img {
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .promo_link {
+    font-size: 0.8em;
+  }
+}
+/* Estilos para la sección de servicios */
+
+#servicios {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.servicios-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.servicio {
+  width: calc(33.33% - 20px);
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicio-img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.servicio h3 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+.servicio p {
+  color: #666;
+  margin: 0 20px 20px;
+  text-align: justify;
+}
+
+.btn-servicio-veterinaria,
+.btn-servicio-peluqueria,
+.btn-servicio-adopciones {
+  padding: 10px 20px;
+  background-color: #05037c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-servicio:hover {
+  background-color: #180c6e;
+}
+.title_adopcion,
+.title_contacto,
+.title_servicios,
+.title_favoritos,
+.title_productos {
+  padding: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+}
+/* Media query para hacer responsive */
+
+@media screen and (max-width: 1024px) {
+  .servicio {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .servicio {
+    width: calc(100% - 20px);
+  }
+}
+
+.alimentos {
+  padding: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+}
+.alimentos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.alimento-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.product-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.btn-add-to-cart {
+  background-color: #a10505d2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #da1f1f;
+}
+/* Estilos para la sección de contacto */
+#contacto {
+  padding: 50px 0;
+}
+
+#contacto h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group select {
+  padding: 10px 30px 10px 10px;
+}
+
+.form-group input[type="file"] {
+  padding: 10px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.button_formulario {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button_formulario:hover {
+  background-color: #45a049;
+}
+
+.maincontent {
+  margin: 20px 0px;
+  padding: 20px;
+  background-color: rgb(248, 244, 244);
+}
+
+.imgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.cards {
+ 
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.cards:hover {
+  transform: scale(1.05);
+}
+
+.cards img {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+.card-body-cat {
+background-color: #f9f9f9;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-body-cat h5 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card-body-cat p {
+  margin: 10px 0 0;
+  color: #666;
+}
+
+.card-body-cat button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f0ad4e;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card-body-cat button:hover {
+  background-color: #ec971f;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-column h5 {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+}
+
+.contact-info,
+.services {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info li,
+.services li {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  background-color: #ffc107;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .ofertas-title,
+  .festival-title {
+    font-size: 18px;
+  }
+  img.d-block.w-100 {
+    height: 250px;
+  }
+  .promo_link img {
+    width: 100px;
+  }
+  .alimento-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .form-group input[type="file"] {
+    padding: 10px;
+    font-size: 0.75rem;
+  }
+}
